@@ -1,0 +1,25 @@
+services:
+  uptimekuma-app:
+    image: tiredofit/uptimekuma:latest
+    container_name: uptimekuma-app
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.uptimekuma-app.rule=Host(`uptimekuma.example.com`)
+      - traefik.http.services.uptimekuma-app.loadbalancer.server.port=80
+    volumes:
+      - ./data:/data
+      - ./logs/uptimekuma:/logs/
+      - ./logs/nginx:/www/nginx/
+    environment:
+      - TIMEZONE=America/Vancouver
+      - CONTAINER_NAME=uptimekuma-app
+    networks:
+      - proxy
+      - services
+    restart: always
+
+networks:
+  proxy:
+    external: true
+  services:
+    external: true

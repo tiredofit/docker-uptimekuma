@@ -1,0 +1,33 @@
+#!/command/with-contenv bash
+
+source /assets/functions/00-container
+PROCESS_NAME="uptimekuma"
+prepare_service defaults single
+
+check_container_initialized
+check_service_initialized init
+
+case "${LOG_TYPE,,}" in
+    both )
+        out=/dev/stdout
+        pipe=" sudo -u uptimekuma tee -a ${LOG_PATH}"/"${LOG_FILE}"
+    ;;
+    console )
+        out=/dev/stdout
+        pipe=" tee"
+    ;;
+    file )
+        out="${LOG_PATH}"/"${LOG_FILE}"
+        pipe=" sleep 0.1"
+    ;;
+esac
+
+export NODE_ENVIRONMENT=production
+export PORT=${LISTEN_PORT}
+liftoff
+
+print_start "Starting Uptime Kuma ${UPTIMEKUMA_VERSION}"
+cd /app
+s6-setuidgid uptimekuma \
+                        exec node \
+                                    server/server.js 2>&1 >> ${out} | ${pipe}
