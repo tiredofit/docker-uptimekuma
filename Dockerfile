@@ -51,6 +51,7 @@ RUN source assets/functions/00-container && \
     package remove .uptimekuma-build-deps && \
     package cleanup && \
     rm -rf \
+            /build-assets \
             /root/.cache \
             /root/.npm \
             /usr/src/*

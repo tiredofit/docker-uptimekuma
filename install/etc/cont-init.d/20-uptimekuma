@@ -6,5 +6,7 @@ PROCESS_NAME="uptimekuma"
 
 bootstrap_filesystems
 configure_container
+custom_files "${CONTAINER_CUSTOM_PATH}" /
+custom_scripts "${CONTAINER_CUSTOM_SCRIPTS_PATH}"
 
 liftoff
