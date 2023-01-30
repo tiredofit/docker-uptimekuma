@@ -53,11 +53,17 @@ This will build a Docker Image for ([Uptime Kuma]](https://uptime.kuma.pet/)), A
 Clone this repository and build the image with `docker build -t (imagename) .`
 
 ### Prebuilt Images
-Builds of the image are available on [Docker Hub](https://hub.docker.com/r/tiredofit/uptimekuma) and is the recommended method of installation.
+Builds of the image are available on [Docker Hub](https://hub.docker.com/r/tiredofit/uptimekuma)
 
 ```bash
-docker pull tiredofit/uptimekuma:(imagetag)
+docker pull docker.io/tiredofdit/uptimekuma:(imagetag)
 ```
+Builds of the image are also available on the [Github Container Registry](https://github.com/tiredofit/docker-uptimekuma/pkgs/container/docker-uptimekuma) 
+ 
+```
+docker pull ghcr.io/tiredofit/docker-uptimekuma/pkgs/container/docker-uptimekuma):(imagetag)
+``` 
+
 The following image tags are available along with their tagged release based on what's written in the [Changelog](CHANGELOG.md):
 
 | Container OS | Tag       |
