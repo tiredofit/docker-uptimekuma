@@ -58,11 +58,11 @@ Builds of the image are available on [Docker Hub](https://hub.docker.com/r/tired
 ```bash
 docker pull docker.io/tiredofdit/uptimekuma:(imagetag)
 ```
-Builds of the image are also available on the [Github Container Registry](https://github.com/tiredofit/docker-uptimekuma/pkgs/container/docker-uptimekuma) 
- 
+Builds of the image are also available on the [Github Container Registry](https://github.com/tiredofit/docker-uptimekuma/pkgs/container/docker-uptimekuma)
+
 ```
 docker pull ghcr.io/tiredofit/docker-uptimekuma:(imagetag)
-``` 
+```
 
 The following image tags are available along with their tagged release based on what's written in the [Changelog](CHANGELOG.md):
 
