@@ -9,7 +9,7 @@
 
 ## About
 
-This will build a Docker Image for ([Uptime Kuma]](https://uptime.kuma.pet/)), A service availability application.
+This will build a Docker Image for [Uptime Kuma](https://uptime.kuma.pet/), A service availability application.
 
 ## Maintainer
 
