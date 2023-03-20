@@ -1,7 +1,7 @@
 # github.com/tiredofit/uptimekuma
 
-[![GitHub release](https://img.shields.io/github/v/tag/tiredofit/uptimekuma?style=flat-square)](https://github.com/tiredofit/uptimekuma/releases/latest)
-[![Build Status](https://img.shields.io/github/workflow/status/tiredofit/uptimekuma/build?style=flat-square)](https://github.com/tiredofit/uptimekuma/actions?query=workflow%3Abuild)
+[![GitHub release](https://img.shields.io/github/v/tag/tiredofit/docker-uptimekuma?style=flat-square)](https://github.com/tiredofit/docker-uptimekuma/releases/latest)
+[![Build Status](https://img.shields.io/github/workflow/status/tiredofit/docker-uptimekuma/build?style=flat-square)](https://github.com/tiredofit/docker-uptimekuma/actions?query=workflow%3Abuild)
 [![Docker Stars](https://img.shields.io/docker/stars/tiredofit/uptimekuma.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/tiredofit/uptimekuma/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/uptimekuma.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/tiredofit/uptimekuma/)
 [![Become a sponsor](https://img.shields.io/badge/sponsor-tiredofit-181717.svg?logo=github&style=flat-square)](https://github.com/sponsors/tiredofit)
@@ -9,7 +9,7 @@
 
 ## About
 
-This will build a Docker Image for ([Uptime Kuma]](https://uptime.kuma.pet/)), A service availability application.
+This will build a Docker Image for [Uptime Kuma](https://uptime.kuma.pet/), A service availability application.
 
 ## Maintainer
 
