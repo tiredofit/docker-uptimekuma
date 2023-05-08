@@ -1,3 +1,9 @@
+## 1.0.8 2023-05-08 <dave at tiredofit dot ca>
+
+   ### Added
+      - Uptime Kuma 1.21.3
+
+
 ## 1.0.7 2023-04-03 <dave at tiredofit dot ca>
 
    ### Added
