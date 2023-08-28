@@ -1,3 +1,9 @@
+## 1.1.0 2023-08-28 <dave at tiredofit dot ca>
+
+   ### Added
+      - Add chromium to provide headless web viewing - If image does not autodectect the path is '/usr/bin/chromium'
+
+
 ## 1.0.13 2023-08-28 <dave at tiredofit dot ca>
 
    ### Added

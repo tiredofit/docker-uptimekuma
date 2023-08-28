@@ -32,6 +32,7 @@ RUN source assets/functions/00-container && \
                     && \
     \
     package install .uptimekuma-run-deps \
+                    chromium \
                     nodejs \
                     && \
     \
