@@ -6,7 +6,7 @@ LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ARG UPTIMEKUMA_VERSION
 
-iENV UPTIMEKUMA_VERSION=${UPTIMEKUMA_VERSION:-"1.23.6"} \
+ENV UPTIMEKUMA_VERSION=${UPTIMEKUMA_VERSION:-"1.23.7"} \
     UPTIMEKUMA_REPO_URL=https://github.com/louislam/uptime-kuma \
     NGINX_SITE_ENABLED="uptimekuma" \
     NGINX_ENABLE_CREATE_SAMPLE_HTML=FALSE \
