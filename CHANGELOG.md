@@ -1,3 +1,9 @@
+## 1.1.11 2024-07-05 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Rebuild to support tiredofit/alpine:7.10.0
+
+
 ## 1.1.10 2024-04-18 <dave at tiredofit dot ca>
 
    ### Added
