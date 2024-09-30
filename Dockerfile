@@ -1,12 +1,12 @@
 ARG DISTRO=alpine
-ARG DISTRO_VARIANT=3.19
+ARG DISTRO_VARIANT=3.20
 
-FROM docker.io/tiredofit/nginx:${DISTRO}-${DISTRO_VARIANT}
+FROM docker.io/tiredofit/nginx:${DISTRO}-${DISTRO_VARIANT}-6.5.2
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ARG UPTIMEKUMA_VERSION
 
-ENV UPTIMEKUMA_VERSION=${UPTIMEKUMA_VERSION:-"1.23.12"} \
+ENV UPTIMEKUMA_VERSION=${UPTIMEKUMA_VERSION:-"1.23.15"} \
     UPTIMEKUMA_REPO_URL=https://github.com/louislam/uptime-kuma \
     NGINX_SITE_ENABLED="uptimekuma" \
     NGINX_ENABLE_CREATE_SAMPLE_HTML=FALSE \
