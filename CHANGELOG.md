@@ -1,3 +1,11 @@
+## 1.1.13 2024-12-20 <dave at tiredofit dot ca>
+
+   ### Added
+      - Uptime Kuma 1.23.16
+      - Alpine 3.21 Base
+      - Pin to tiredofit/nginx:6.5.10
+
+
 ## 1.1.12 2024-09-30 <dave at tiredofit dot ca>
 
    ### Added
